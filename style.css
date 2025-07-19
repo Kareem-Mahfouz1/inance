@@ -1,0 +1,536 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --blue: #007bff;
+  --light-blue: #d1e3ff;
+  --orange: #ff8a1d;
+  --dark-blue: #0a0f43;
+}
+
+body {
+  max-width: 100svw;
+  height: 100svh;
+  font-family: Karla, sans-serif;
+}
+
+header {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: var(--light-blue);
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  color: var(--blue);
+  font-size: 26px;
+}
+
+.menu-icon {
+  display: none;
+  color: var(--blue);
+  font-size: 26px;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.home-link {
+  color: var(--blue);
+}
+
+nav a {
+  color: black;
+}
+
+a:hover {
+  color: var(--blue);
+}
+
+a:visited {
+  color: none;
+}
+
+.first-sec {
+  width: 100%;
+  height: 80svh;
+  background-color: var(--light-blue);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.first-sec-text {
+  width: 40%;
+}
+
+.first-sec-text h2 {
+  width: 50%;
+  font-size: 32px;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.first-sec-text p {
+  font-size: 16px;
+  color: rgb(88, 88, 88);
+  margin-bottom: 20px;
+}
+
+.first-sec button {
+  padding: 12px 40px;
+  font-weight: 600;
+  border: 2px solid var(--orange);
+  background-color: var(--orange);
+  color: white;
+}
+
+.first-sec button:hover {
+  background-color: transparent;
+  color: var(--orange);
+}
+
+.first-sec img {
+  height: 90%;
+}
+
+.sec-btns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sec-btns button {
+  border: none;
+  background-color: white;
+  transform: translate(0px, -100px);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  color: black;
+  width: 23%;
+  height: 200px;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.sec-btns button div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.sec-btns button i {
+  font-size: 26px;
+}
+
+.sec-btns .middle-btn {
+  background-color: var(--orange);
+  color: white;
+}
+
+.sec-btns button:hover {
+  background-color: var(--orange);
+  color: white;
+}
+
+.about-us {
+  width: 100%;
+  height: 40svh;
+  margin-bottom: 20svh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-us-text {
+  width: 35%;
+}
+
+.about-us h2 {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.about-us p {
+  font-size: 17px;
+  color: rgb(88, 88, 88);
+  margin: 20px 0px;
+}
+
+.about-us button {
+  background-color: var(--blue);
+  color: white;
+  border: 2px solid var(--blue);
+  padding: 12px 20px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.about-us button:hover {
+  background-color: transparent;
+  color: var(--blue);
+}
+
+.about-us img {
+  width: 37%;
+}
+
+/*  */
+.second-sec {
+  width: 100%;
+  height: 110svh;
+  background-color: var(--light-blue);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.second-sec img {
+  width: 45%;
+}
+
+.second-sec div {
+  width: 40%;
+}
+
+.second-sec h2 {
+  font-size: 32px;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.second-sec p {
+  font-size: 16px;
+  color: rgb(88, 88, 88);
+  margin-bottom: 20px;
+}
+
+.second-sec button {
+  padding: 12px 40px;
+  font-weight: 600;
+  border: 2px solid var(--orange);
+  background-color: var(--orange);
+  color: white;
+}
+
+.second-sec button:hover {
+  background-color: transparent;
+  color: var(--orange);
+}
+
+/*  */
+
+.services {
+  width: 100%;
+  height: 65svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services h2 {
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.services-btns {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 0px;
+  gap: 20px;
+}
+
+.services-btns h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+
+.services-btns p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(88, 88, 88);
+  transition: color 0.3s ease-in-out;
+}
+
+.services-btns button {
+  border: none;
+  display: block;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  margin: 0px 20px;
+  padding: 40px 20px;
+  font-weight: 700;
+  color: black;
+  max-width: 350px;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.services-btns button div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.services-btns button i {
+  font-size: 30px;
+}
+
+.services-btns button:hover {
+  background-color: var(--orange);
+  color: white;
+}
+
+.services-btns button:hover p {
+  color: white;
+}
+
+.services-btn {
+  padding: 12px 40px;
+  font-weight: 600;
+  border: 2px solid var(--blue);
+  background-color: var(--blue);
+  color: white;
+}
+
+.services-btn:hover {
+  background-color: transparent;
+  color: var(--blue);
+}
+
+/*  */
+.contact-us {
+  width: 100%;
+  height: 85svh;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contact-us h3 {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact-us .contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+
+.contact-us .contact-form input {
+  width: 40svw;
+  padding: 10px;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact-us .contact-form .message {
+  padding: 50px 10px;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact-btn {
+  padding: 12px 40px;
+  font-weight: 600;
+  border: 2px solid var(--blue);
+  background-color: var(--blue);
+  color: white;
+}
+
+.contact-btn:hover {
+  background-color: transparent;
+  color: var(--blue);
+}
+
+.contact-us iframe {
+  width: 50%;
+  height: 400px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .sec-btns {
+    margin-top: 100px;
+  }
+
+  .about-us {
+    height: 50svh;
+    align-items: end;
+    margin-bottom: 50px;
+  }
+
+  .sec-btns button {
+    transform: none;
+  }
+
+  .second-sec img {
+    width: 55%;
+  }
+
+  .services {
+    height: 110svh;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline-block;
+  }
+
+  .first-sec {
+    height: 150svh;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+  }
+
+  .first-sec img {
+    height: 65%;
+  }
+
+  .first-sec-text {
+    margin-top: 40px;
+    width: 70%;
+  }
+
+  .sec-btns {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .sec-btns button {
+    width: 75%;
+    transform: none;
+  }
+
+  .about-us {
+    height: 100svh;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .about-us-text {
+    width: 75%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .about-us img {
+    width: 75%;
+  }
+
+  .second-sec {
+    height: 80svh;
+  }
+
+  .second-sec div {
+    width: 75%;
+  }
+
+  .second-sec img {
+    display: none;
+  }
+
+  .services {
+    height: 150svh;
+  }
+
+  .contact-us {
+    height: 150svh;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .contact-us .contact-form input {
+    width: 90svw;
+  }
+
+  .contact-us iframe {
+    width: 90svw;
+  }
+}
+
+@media (max-width: 425px) {
+  .first-sec {
+    height: 120svh;
+  }
+
+  .first-sec img {
+    height: 50%;
+  }
+
+  .about-us {
+    height: 85svh;
+  }
+}
+
+@media (max-width: 320px) {
+  .first-sec {
+    height: 150svh;
+  }
+
+  .first-sec img {
+    height: 50%;
+  }
+
+  .about-us {
+    height: 100svh;
+  }
+}
